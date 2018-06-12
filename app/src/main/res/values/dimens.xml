@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="allLayoutPadding">8dp</dimen>
+    <dimen name="allCardCornerRadius">4dp</dimen>
+    <dimen name="listItemHeight">144dp</dimen>
+    <dimen name="listLeftImageWidth">112dp</dimen>
+    <dimen name="infoLayoutButtonPadding">16dp</dimen>
+</resources>

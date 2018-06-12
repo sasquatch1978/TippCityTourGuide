@@ -1,0 +1,226 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Tipp City Tour Guide</string>
+
+    <!-- Content descriptions -->
+    <string name="listArrowDescription">More info right arrow</string>
+
+    <!-- TabLayout titles -->
+    <string name="tabTitleOne">Sights</string>
+    <string name="tabTitleTwo">Events</string>
+    <string name="tabTitleThree">Food</string>
+    <string name="tabTitleFour">Hotels</string>
+
+    <!-- Place names -->
+    <string name="sightsNameOne">Tipp Roller Mill</string>
+    <string name="sightsNameTwo">Charleston Falls Preserve</string>
+    <string name="sightsNameThree">Waco Air Museum</string>
+    <string name="sightsNameFour">Lost Creek Reserve</string>
+    <string name="sightsNameFive">Taylorsville Metro Park</string>
+    <string name="sightsNameSix">Old Mason Winery</string>
+    <string name="eventsNameOne">Canal Music Fest</string>
+    <string name="eventsNameTwo">Antique and Artisan Show</string>
+    <string name="eventsNameThree">Beer Crawl</string>
+    <string name="eventsNameFour">Putt Putt Through Tipp</string>
+    <string name="eventsNameFive">Fulton Farm\'s Sweet Corn Festival</string>
+    <string name="eventsNameSix">Trans Am Cruise In</string>
+    <string name="eventsNameSeven">Tippapalooza</string>
+    <string name="eventsNameEight">Mum Festival</string>
+    <string name="foodNameOne">Coldwater Café</string>
+    <string name="foodNameTwo">Harrison\'s</string>
+    <string name="foodNameThree">Sam and Ethel\'s</string>
+    <string name="foodNameFour">DJ\'s Pizza Alley</string>
+    <string name="foodNameFive">Greenfire Bistro</string>
+    <string name="foodNameSix">Hinders Sports Bar</string>
+    <string name="foodNameSeven">Hong Kong Kitchen</string>
+    <string name="foodNameEight">Grounds for Pleasure Coffee House</string>
+    <string name="foodNameNine">Hickory River Smokehouse</string>
+    <string name="foodNameTen">JJ\'s Lunchbox</string>
+    <string name="hotelsNameOne">Holiday Inn Express</string>
+    <string name="hotelsNameTwo"><![CDATA[La Quinta Inn & Suites]]></string>
+    <string name="hotelsNameThree">Super 8</string>
+    <string name="hotelsNameFour">Budget Inn</string>
+    <string name="hotelsNameFive">Motel 6</string>
+
+    <!-- Place information -->
+    <string name="sightsInfoOne">Historic mill.</string>
+    <string name="sightsInfoTwo">Hiking, wildlife viewing, and a waterfall.</string>
+    <string name="sightsInfoThree">Features biplanes and aviation memorabilia.</string>
+    <string name="sightsInfoFour">Hiking, wildlife viewing, and a farm.</string>
+    <string name="sightsInfoFive">Hiking, biking, and historic ruins.</string>
+    <string name="sightsInfoSix">Features a vineyard with wine tasting.</string>
+    <string name="eventsInfoOne">June 9\nMusic festival.</string>
+    <string name="eventsInfoTwo">June 16\nAntiques and crafts.</string>
+    <string name="eventsInfoThree">July 6\nBeer tasting through downtown.</string>
+    <string name="eventsInfoFour">August 3\nGolf through downtown shops.</string>
+    <string name="eventsInfoFive">August 25–26\nFresh food and crafts.</string>
+    <string name="eventsInfoSix">August 25\nCar show.</string>
+    <string name="eventsInfoSeven">September 1\nMusic festival.</string>
+    <string name="eventsInfoEight">September 28–30\nCar show and parade.</string>
+    <string name="foodInfoOne">Classy dining with a bar.</string>
+    <string name="foodInfoTwo">American food with a bar.</string>
+    <string name="foodInfoThree">Casual dining with simple meals.</string>
+    <string name="foodInfoFour">Takeout pizza.</string>
+    <string name="foodInfoFive">Wide variety of food in a casual environment.</string>
+    <string name="foodInfoSix">Sports bar specializing in wings and sandwiches.</string>
+    <string name="foodInfoSeven">Asian food with a buffet.</string>
+    <string name="foodInfoEight">Coffee and sandwiches.</string>
+    <string name="foodInfoNine">Casual dining serving barbecued meats.</string>
+    <string name="foodInfoTen">Specializing in pizza, sandwiches and wings.</string>
+    <string name="hotelsInfoOne">A two star hotel, with free breakfast and wifi.</string>
+    <string name="hotelsInfoTwo">A three star hotel, with free breakfast and wifi.</string>
+    <string name="hotelsInfoThree">A two star hotel, with free breakfast.</string>
+    <string name="hotelsInfoFour">A two star hotel.</string>
+    <string name="hotelsInfoFive">A two star hotel.</string>
+
+    <!-- Place admission prices -->
+    <string name="priceFree">Free</string>
+    <string name="sightsPriceThree">$6</string>
+    <string name="eventsPriceThree">$25</string>
+    <string name="eventsPriceFour">$10</string>
+    <string name="eventsPriceSeven">$5</string>
+    <string name="foodPriceOneSign">$</string>
+    <string name="foodPriceTwoSigns">$$</string>
+    <string name="foodPriceThreeSigns">$$$</string>
+    <string name="hotelsPriceOne">$105</string>
+    <string name="hotelsPriceTwo">$94</string>
+    <string name="hotelsPriceThree">$63</string>
+    <string name="hotelsPriceFour">$44</string>
+    <string name="hotelsPriceFive">$50</string>
+
+    <!-- Place hours -->
+    <string name="sightsHoursOne">Call for hours</string>
+    <string name="sightsHoursTwo">8am to sunset</string>
+    <string name="sightsHoursThree"><![CDATA[Mon – Fri: 9am to 1:30pm\nSat & Sun:
+        12pm to 5pm]]></string>
+    <string name="sightsHoursFour">8am to sunset</string>
+    <string name="sightsHoursFive">Apr. 1 – Oct. 31: 8am to 10pm\nNov.1 – Mar. 31: 8am to 8pm
+        \nClosed Christmas and New Year\'s Day</string>
+    <string name="sightsHoursSix"><![CDATA[Mon – Thu: 12pm to 6pm\nFri & Sat: 12pm to 9pm
+        \nSun: Closed]]></string>
+    <string name="eventsHoursOne">7:30pm</string>
+    <string name="eventsHoursTwo">9am to 4pm</string>
+    <string name="eventsHoursThree">5pm to 8pm</string>
+    <string name="eventsHoursFour">5pm to 8pm</string>
+    <string name="eventsHoursFive">Aug. 25: 11am to 7pm\nAug. 26: 11am to 6pm</string>
+    <string name="eventsHoursSix">5pm to 9pm</string>
+    <string name="eventsHoursSeven">5pm to 11pm</string>
+    <string name="eventsHoursEight">Sep. 28: 4pm to 10pm (Car show)\nSep. 29: 10am
+        (Parade)\nSep. 30: 12pm (Events at park)</string>
+    <string name="foodHoursOne"><![CDATA[Tue – Thu: 11am to 9pm\nFri & Sat: 11am to 10pm
+        \nSun & Mon: Closed]]></string>
+    <string name="foodHoursTwo">Mon – Sat: 11am to 10pm\nSun: 12pm to 8pm
+        \nClosed Fourth of July</string>
+    <string name="foodHoursThree">Mon – Sat: 6am to 3pm\nSun: 8am to 2pm</string>
+    <string name="foodHoursFour">Mon: Closed\nTues – Thu: 3pm to 9pm\nFri: 11am to 10pm
+        \nSat: 3pm to 10pm\nSun: 1pm to 9pm</string>
+    <string name="foodHoursFive">Mon – Thu: 11am to 2pm / 4pm to 9pm\nFri: 11am to 2pm /
+        4pm to 10 pm\nSat: 4pm to 10pm\nSun: Closed</string>
+    <string name="foodHoursSix"><![CDATA[Mon – Thu: 11am to 12am\nFri & Sat: 11am to 1am
+        \nSun: 12pm to 9pm]]></string>
+    <string name="foodHoursSeven"><![CDATA[Mon – Thu: 10am to 9:30pm\nFri & Sat: 10am to 10pm
+        \nSun: 10:30am to 9:30pm]]></string>
+    <string name="foodHoursEight">Mon – Thu: 7am to 7pm\nFri: 7am to 8pm\nSat: 8am to 8pm
+        \nSun: 10am to 4pm</string>
+    <string name="foodHoursNine"><![CDATA[Tue – Sat: 11am to 9pm\nSun & Mon: 11am to 8pm]]></string>
+    <string name="foodHoursTen"><![CDATA[Mon – Thu: 11am to 9pm\nFri & Sat: 11am to 11pm
+        \nSun: 12pm to 9pm]]></string>
+    <string name="hotelsHoursOne">Check In: 3pm\nCheck Out: 11am</string>
+    <string name="hotelsHoursTwo">Check In: 3pm\nCheck Out: 11am</string>
+    <string name="hotelsHoursCall">Check In: Call\nCheck Out: Call</string>
+
+    <!-- Place locations -->
+    <string name="sightsLocationOne">225 E Main St, Tipp City, OH 45371</string>
+    <string name="sightsLocationTwo">2535 Ross Rd, Tipp City, OH 45371</string>
+    <string name="sightsLocationThree">1865 S Co Rd 25A, Troy, OH 45373</string>
+    <string name="sightsLocationFour">2385 State Route 41, Troy OH 45373</string>
+    <string name="sightsLocationFive">2000 US Route 40, Vandalia, OH 45377</string>
+    <string name="sightsLocationSix">4199 S Iddings Rd, West Milton, OH 45383</string>
+    <string name="eventsLocationOne">35 Parkwood Dr, Tipp City, OH 45371</string>
+    <string name="eventsLocationTwo">4 E Main St, Tipp City, OH 45371</string>
+    <string name="eventsLocationThree">132 E Main St, Tipp City, OH 45371</string>
+    <string name="eventsLocationFour">6 S 3rd Street, Tipp City, Ohio 45371</string>
+    <string name="eventsLocationFive">2393 OH-202, Troy, OH 45373</string>
+    <string name="eventsLocationSix">2nd and Main St, Tipp City, Ohio 45371</string>
+    <string name="eventsLocationSeven">3853 Hyattsville Rd, Tipp City, OH 45371</string>
+    <string name="eventsLocationEight">35 Parkwood Dr, Tipp City, OH 45371</string>
+    <string name="foodLocationOne">19 E Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationTwo">106 E Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationThree">120 E Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationFour">18 S 2nd St, Tipp City, OH 45371</string>
+    <string name="foodLocationFive">965 W Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationSix">902 W Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationSeven">14 S Tippecanoe Drive, Tipp City, OH 45371</string>
+    <string name="foodLocationEight">115 E Main St, Tipp City, OH 45371</string>
+    <string name="foodLocationNine">135 S Garber Drive, Tipp City, OH 45371</string>
+    <string name="foodLocationTen">7025 S Co Rd 25A, Tipp City, OH 45371</string>
+    <string name="hotelsLocationOne">1100 W Main St, Tipp City, OH 45371</string>
+    <string name="hotelsLocationTwo">19 Weller Drive, Tipp City OH 45371</string>
+    <string name="hotelsLocationThree">550 E National Rd, Vandalia, OH 45377</string>
+    <string name="hotelsLocationFour">1330 Archer Drive, Troy, OH 45373</string>
+    <string name="hotelsLocationFive">1260 S Dorset Rd, Troy, OH 45373</string>
+
+    <!-- Place phone numbers -->
+    <string name="sightsPhoneOne">(937) 667–0175</string>
+    <string name="sightsPhoneTwo">(937) 335–6273</string>
+    <string name="sightsPhoneThree">(937) 335–9226</string>
+    <string name="sightsPhoneFour">(937) 335–6273</string>
+    <string name="sightsPhoneFive">(937) 275–7275</string>
+    <string name="sightsPhoneSix">(937) 698–1122</string>
+    <string name="eventsPhoneOne">(937) 543–5115</string>
+    <string name="eventsPhoneDowntownTipp">(937) 667–0883</string>
+    <string name="eventsPhoneFive">(937) 335–6983</string>
+    <string name="eventsPhoneSix">(937) 667–3696</string>
+    <string name="eventsPhoneSeven">(937) 667–2753</string>
+    <string name="eventsPhoneEight">(937) 387–6774</string>
+    <string name="foodPhoneOne">(937) 667–0007</string>
+    <string name="foodPhoneTwo">(937) 667–5200</string>
+    <string name="foodPhoneThree">(937) 667–0113</string>
+    <string name="foodPhoneFour">(937) 667–2297</string>
+    <string name="foodPhoneFive">(937) 667–6664</string>
+    <string name="foodPhoneSix">(937) 667–4433</string>
+    <string name="foodPhoneSeven">(937) 667–7607</string>
+    <string name="foodPhoneEight">(937) 506–7733</string>
+    <string name="foodPhoneNine">(937) 669–2271</string>
+    <string name="foodPhoneTen">(937) 667–3732</string>
+    <string name="hotelsPhoneOne">(937) 667–5161</string>
+    <string name="hotelsPhoneTwo">(937) 667–1574</string>
+    <string name="hotelsPhoneThree">(937) 898–7636</string>
+    <string name="hotelsPhoneFour">(937) 339–6564</string>
+    <string name="hotelsPhoneFive">(937) 335–0021</string>
+
+    <!-- Place websites -->
+    <string name="sightsWebsiteOne">https://www.tipprollermill.com/</string>
+    <string name="sightsWebsiteTwo">https://www.miamicountyparks.com/parks/charleston</string>
+    <string name="sightsWebsiteThree">http://www.wacoairmuseum.org</string>
+    <string name="sightsWebsiteFour">https://www.miamicountyparks.com/park/lostcreek</string>
+    <string name="sightsWebsiteFive">https://www.metroparks.org/places-to-go/taylorsville</string>
+    <string name="sightsWebsiteSix">https://www.oldmason.com</string>
+    <string name="eventsWebsiteOne">https://www.canalmusicfest.com/</string>
+    <string name="eventsWebsiteTwo">https://www.facebook.com/DowntownTippCityVHmM/</string>
+    <string name="eventsWebsiteThree">https://www.facebook.com/events/362334517510572/</string>
+    <string name="eventsWebsiteFour">https://www.facebook.com/events/159946008065107/</string>
+    <string name="eventsWebsiteFive">http://fultonfarms.com/seasonal-activities/</string>
+    <string name="eventsWebsiteSix">https://www.facebook.com/events/1800048216674169</string>
+    <string name="eventsWebsiteSeven">http://www.tippapalooza.com/</string>
+    <string name="eventsWebsiteEight">https://www.tippcitymumfestival.org/</string>
+    <string name="foodWebsiteOne">http://www.coldwater-cafe.com</string>
+    <string name="foodWebsiteTwo">https://www.harrisonsrestaurant.com</string>
+    <string name="foodWebsiteThree">http://www.samandethels.com</string>
+    <string name="foodWebsiteFour">https://www.zmenu.com/
+        d-js-pizza-alley-tipp-city-online-menu/</string>
+    <string name="foodWebsiteFive">http://www.greenfirebistro.com</string>
+    <string name="foodWebsiteSix">https://www.hinderssportsbar.com</string>
+    <string name="foodWebsiteSeven">http://www.hongkongmenu.weebly.com</string>
+    <string name="foodWebsiteEight">https://www.facebook.com/gfpcoffeehouse</string>
+    <string name="foodWebsiteNine">https://www.hickoryriver.com/locations/
+        tipp-city-ohio.html</string>
+    <string name="foodWebsiteTen">https://www.facebook.com/JJs-Lunch-Box-402683449898152</string>
+    <string name="hotelsWebsiteOne">https://www.ihg.com/holidayinnexpress/hotels/us/en/tipp-city/
+        daytc/hoteldetail</string>
+    <string name="hotelsWebsiteTwo">http://www.laquintadaytontippcity.com</string>
+    <string name="hotelsWebsiteThree">https://www.wyndhamhotels.com/super-8/vandalia-ohio/
+        super-8-vandalia-dayton-international-airport/overview</string>
+    <string name="hotelsWebsiteFour">http://budgetinntroy.business.site</string>
+    <string name="hotelsWebsiteFive">https://www.motel6.com/en/motels.oh.troy.4700.html</string>
+</resources>
