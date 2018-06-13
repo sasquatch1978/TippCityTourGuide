@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
+    style="@style/PlaceInfoLayout"
     tools:context=".PlaceInfoActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appToolbar"
+        style="@style/ToolbarElevated" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/appToolbar"
-            style="@style/ToolbarElevated" />
+    <ImageView
+        android:id="@+id/infoImage"
+        style="@style/InfoLayoutImage"
+        android:importantForAccessibility="no" />
 
-        <ImageView
-            android:id="@+id/infoImage"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="2"
-            android:adjustViewBounds="true"
-            android:importantForAccessibility="no"
-            android:scaleType="fitXY" />
+    <RelativeLayout style="@style/InformationLayout">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="3">
+        <TextView
+            style="@style/HoursInformationHeader"
+            android:text="@string/infoHoursHeader" />
 
-            <TextView
-                style="@style/HoursInformationHeader"
-                android:text="@string/infoHoursHeader" />
+        <TextView
+            android:id="@+id/infoHours"
+            style="@style/HoursInformation"
+            tools:text="Hours" />
 
-            <TextView
-                android:id="@+id/infoHours"
-                style="@style/HoursInformation"
-                tools:text="Hours" />
+        <Button
+            android:id="@+id/infoLocation"
+            style="@style/LocationButton"
+            android:text="@string/locationButtonText" />
 
-            <Button
-                android:id="@+id/infoLocation"
-                style="@style/LocationButton"
-                android:text="@string/locationButtonText" />
+        <Button
+            android:id="@+id/infoCall"
+            style="@style/CallButton"
+            android:text="@string/callButtonText" />
 
-            <Button
-                android:id="@+id/infoCall"
-                style="@style/CallButton"
-                android:text="@string/callButtonText" />
+        <Button
+            android:id="@+id/infoWebsite"
+            style="@style/WebsiteButton"
+            android:text="@string/websiteButtonText" />
 
-            <Button
-                android:id="@+id/infoWebsite"
-                style="@style/WebsiteButton"
-                android:text="@string/websiteButtonText" />
-
-        </RelativeLayout>
-    </LinearLayout>
-</ScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <dimen name="allToolbarElevation">4dp</dimen>
     <dimen name="allLayoutPadding">8dp</dimen>
     <dimen name="allCardCornerRadius">4dp</dimen>
@@ -11,5 +10,6 @@
     <dimen name="infoButtonHeight">30dp</dimen>
     <dimen name="infoButtonRadius">2dp</dimen>
     <dimen name="infoHoursPadding">48dp</dimen>
+    <dimen name="tabIndicatorHeight">3dp</dimen>
     <dimen name="zero">0dp</dimen>
 </resources>

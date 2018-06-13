@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    style="@style/PlaceInfoLayout"
     tools:context=".PlaceInfoActivity">
 
     <android.support.v7.widget.Toolbar
@@ -16,17 +14,10 @@
 
         <ImageView
             android:id="@+id/infoImage"
-            android:layout_width="@dimen/zero"
-            android:layout_height="match_parent"
-            android:layout_weight="2.5"
-            android:adjustViewBounds="true"
-            android:importantForAccessibility="no"
-            android:scaleType="fitXY" />
+            style="@style/InfoLayoutImageLand"
+            android:importantForAccessibility="no" />
 
-        <RelativeLayout
-            android:layout_width="@dimen/zero"
-            android:layout_height="match_parent"
-            android:layout_weight="3">
+        <RelativeLayout style="@style/InformationLayoutLand">
 
             <TextView
                 style="@style/HoursInformationHeader"
