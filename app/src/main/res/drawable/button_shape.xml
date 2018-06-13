@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <corners android:radius="2dp" />
+    <corners android:radius="@dimen/infoButtonRadius" />
     <solid android:color="@color/colorAccent" />
     <padding
-        android:bottom="0dp"
-        android:left="0dp"
-        android:right="0dp"
-        android:top="0dp" />
+        android:bottom="@dimen/zero"
+        android:left="@dimen/zero"
+        android:right="@dimen/zero"
+        android:top="@dimen/zero" />
     <size
-        android:width="150dp"
-        android:height="30dp" />
+        android:width="@dimen/infoButtonWidth"
+        android:height="@dimen/infoButtonHeight" />
 </shape>

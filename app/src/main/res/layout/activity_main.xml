@@ -7,16 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appToolbar"
+        style="@style/ToolbarNoElevation" />
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabBackground="@color/colorPrimary"
-        app:tabIndicatorColor="#2A5A99"
+        app:tabIndicatorColor="@android:color/white"
         app:tabMode="fixed"
         app:tabGravity="fill"
         app:tabSelectedTextColor="@android:color/white"
-        app:tabTextColor="#CCCCCC" />
+        app:tabTextColor="@color/gray" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

@@ -3,6 +3,8 @@ package com.example.android.tippcitytourguide;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,7 +45,7 @@ public class FoodFragment extends Fragment {
                 getString(R.string.foodInfoThree), getString(R.string.foodPriceOneSign),
                 getString(R.string.foodHoursThree), getString(R.string.foodLocationThree),
                 getString(R.string.foodPhoneThree), getString(R.string.foodWebsiteThree)));
-        places.add(new Place(R.drawable.djs_pizza_alley, getString(R.string.foodNameFour),
+        places.add(new Place(R.drawable.grounds_for_pleasure, getString(R.string.foodNameFour),
                 getString(R.string.foodInfoFour), getString(R.string.foodPriceOneSign),
                 getString(R.string.foodHoursFour), getString(R.string.foodLocationFour),
                 getString(R.string.foodPhoneFour), getString(R.string.foodWebsiteFour)));
@@ -59,18 +61,14 @@ public class FoodFragment extends Fragment {
                 getString(R.string.foodInfoSeven), getString(R.string.foodPriceTwoSigns),
                 getString(R.string.foodHoursSeven), getString(R.string.foodLocationSeven),
                 getString(R.string.foodPhoneSeven), getString(R.string.foodWebsiteSeven)));
-        places.add(new Place(R.drawable.grounds_for_pleasure, getString(R.string.foodNameEight),
-                getString(R.string.foodInfoEight), getString(R.string.foodPriceOneSign),
+        places.add(new Place(R.drawable.hickory_river, getString(R.string.foodNameEight),
+                getString(R.string.foodInfoEight), getString(R.string.foodPriceTwoSigns),
                 getString(R.string.foodHoursEight), getString(R.string.foodLocationEight),
                 getString(R.string.foodPhoneEight), getString(R.string.foodWebsiteEight)));
-        places.add(new Place(R.drawable.hickory_river, getString(R.string.foodNameNine),
-                getString(R.string.foodInfoNine), getString(R.string.foodPriceTwoSigns),
+        places.add(new Place(R.drawable.jjs_lunchbox, getString(R.string.foodNameNine),
+                getString(R.string.foodInfoNine), getString(R.string.foodPriceOneSign),
                 getString(R.string.foodHoursNine), getString(R.string.foodLocationNine),
                 getString(R.string.foodPhoneNine), getString(R.string.foodWebsiteNine)));
-        places.add(new Place(R.drawable.jjs_lunchbox, getString(R.string.foodNameTen),
-                getString(R.string.foodInfoTen), getString(R.string.foodPriceOneSign),
-                getString(R.string.foodHoursTen), getString(R.string.foodLocationTen),
-                getString(R.string.foodPhoneTen), getString(R.string.foodWebsiteTen)));
 
         // Set the adapter.
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), places);
@@ -94,7 +92,15 @@ public class FoodFragment extends Fragment {
                 placeInfo.putExtra("location", listItem.getPlaceLocationId());
                 placeInfo.putExtra("phone", listItem.getPlacePhoneId());
                 placeInfo.putExtra("website", listItem.getPlaceWebsiteId());
-                startActivity(placeInfo);
+                /* Make a parent to child activity transition.
+                   Reference: https://stackoverflow.com/questions/27235173
+                   Date: 6/13/18
+                 */
+                Bundle options = ActivityOptionsCompat.makeScaleUpAnimation(
+                        view, 0, 0, view.getWidth(), view.getHeight()).toBundle();
+                assert getActivity() != null;
+                ActivityCompat.startActivity(getActivity(), placeInfo, options);
+                // End referenced code.
             }
         });
 

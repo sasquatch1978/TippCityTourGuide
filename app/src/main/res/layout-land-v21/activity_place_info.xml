@@ -8,7 +8,7 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/appToolbar"
-        style="@style/ToolbarNoElevation" />
+        style="@style/ToolbarElevated" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -3,6 +3,8 @@ package com.example.android.tippcitytourguide;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,7 +76,15 @@ public class HotelsFragment extends Fragment {
                 placeInfo.putExtra("location", listItem.getPlaceLocationId());
                 placeInfo.putExtra("phone", listItem.getPlacePhoneId());
                 placeInfo.putExtra("website", listItem.getPlaceWebsiteId());
-                startActivity(placeInfo);
+                /* Make a parent to child activity transition.
+                   Reference: https://stackoverflow.com/questions/27235173
+                   Date: 6/13/18
+                 */
+                Bundle options = ActivityOptionsCompat.makeScaleUpAnimation(
+                        view, 0, 0, view.getWidth(), view.getHeight()).toBundle();
+                assert getActivity() != null;
+                ActivityCompat.startActivity(getActivity(), placeInfo, options);
+                // End referenced code.
             }
         });
 

@@ -2,8 +2,10 @@ package com.example.android.tippcitytourguide;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +30,18 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         phone = getIntent().getStringExtra("phone");
         website = getIntent().getStringExtra("website");
 
+        Toolbar appToolbar1 = findViewById(R.id.appToolbar);
+
+        // Set the toolbar.
+        setSupportActionBar(appToolbar1);
+
+        // Get a support ActionBar corresponding to this toolbar.
+        ActionBar appToolbar = getSupportActionBar();
+
+        // Enable the Up button and make sure it's not null.
+        assert appToolbar != null;
+        appToolbar.setDisplayHomeAsUpEnabled(true);
+
         setTitle(name);
 
         ImageView infoImage = findViewById(R.id.infoImage);
@@ -39,8 +53,8 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         Button infoLocation = findViewById(R.id.infoLocation);
         infoLocation.setOnClickListener(this);
 
-        Button infoPhone = findViewById(R.id.infoPhone);
-        infoPhone.setOnClickListener(this);
+        Button infoCall = findViewById(R.id.infoCall);
+        infoCall.setOnClickListener(this);
 
         Button infoWebsite = findViewById(R.id.infoWebsite);
         infoWebsite.setOnClickListener(this);
@@ -60,7 +74,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
                 break;
 
             // Enter the phone number in the dialer for the place.
-            case R.id.infoPhone:
+            case R.id.infoCall:
                 Intent placePhone = new Intent(Intent.ACTION_DIAL);
                 placePhone.setData(Uri.parse("tel:" + phone));
                 // Make sure an app is installed to complete this action.

@@ -1,11 +1,10 @@
 package com.example.android.tippcitytourguide;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,8 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Set ActionBar elevation to zero to remove shadow between it and TabLayout.
-        this.getSupportActionBar().setElevation(0);
+        // Identify the Toolbar.
+        Toolbar appToolbar = findViewById(R.id.appToolbar);
+
+        // Set the Toolbar.
+        setSupportActionBar(appToolbar);
 
         // Find the view pager that will allow the user to swipe between fragments.
         ViewPager viewPager = findViewById(R.id.viewpager);

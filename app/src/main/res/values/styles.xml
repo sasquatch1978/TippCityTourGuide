@@ -1,11 +1,73 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!-- Added to resolve a rendering error in Android Studio.-->
         <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="ToolbarNoElevation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="LocationButton">
+        <item name="android:layout_width">@dimen/infoButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginBottom">@dimen/infoLayoutButtonPadding</item>
+        <item name="android:layout_marginStart">@dimen/infoLayoutButtonPadding</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CallButton">
+        <item name="android:layout_width">@dimen/infoButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/infoLayoutButtonPadding</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WebsiteButton">
+        <item name="android:layout_width">@dimen/infoButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginBottom">@dimen/infoLayoutButtonPadding</item>
+        <item name="android:layout_marginEnd">@dimen/infoLayoutButtonPadding</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="HoursInformation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingBottom">@dimen/infoHoursPadding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="HoursInformationHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_above">@id/infoHours</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

@@ -11,6 +11,12 @@
     <string name="tabTitleThree">Food</string>
     <string name="tabTitleFour">Hotels</string>
 
+    <!-- PlaceInfoActivity Layout -->
+    <string name="infoHoursHeader"><u>Hours:</u></string>
+    <string name="locationButtonText">Location</string>
+    <string name="callButtonText">Call</string>
+    <string name="websiteButtonText">Website</string>
+
     <!-- Place names -->
     <string name="sightsNameOne">Tipp Roller Mill</string>
     <string name="sightsNameTwo">Charleston Falls Preserve</string>
@@ -29,13 +35,12 @@
     <string name="foodNameOne">Coldwater Café</string>
     <string name="foodNameTwo">Harrison\'s</string>
     <string name="foodNameThree">Sam and Ethel\'s</string>
-    <string name="foodNameFour">DJ\'s Pizza Alley</string>
+    <string name="foodNameFour">Grounds for Pleasure Coffee House</string>
     <string name="foodNameFive">Greenfire Bistro</string>
     <string name="foodNameSix">Hinders Sports Bar</string>
     <string name="foodNameSeven">Hong Kong Kitchen</string>
-    <string name="foodNameEight">Grounds for Pleasure Coffee House</string>
-    <string name="foodNameNine">Hickory River Smokehouse</string>
-    <string name="foodNameTen">JJ\'s Lunchbox</string>
+    <string name="foodNameEight">Hickory River Smokehouse</string>
+    <string name="foodNameNine">JJ\'s Lunchbox</string>
     <string name="hotelsNameOne">Holiday Inn Express</string>
     <string name="hotelsNameTwo"><![CDATA[La Quinta Inn & Suites]]></string>
     <string name="hotelsNameThree">Super 8</string>
@@ -60,13 +65,12 @@
     <string name="foodInfoOne">Classy dining with a bar.</string>
     <string name="foodInfoTwo">American food with a bar.</string>
     <string name="foodInfoThree">Casual dining with simple meals.</string>
-    <string name="foodInfoFour">Takeout pizza.</string>
+    <string name="foodInfoFour">Coffee and sandwiches.</string>
     <string name="foodInfoFive">Wide variety of food in a casual environment.</string>
     <string name="foodInfoSix">Sports bar specializing in wings and sandwiches.</string>
     <string name="foodInfoSeven">Asian food with a buffet.</string>
-    <string name="foodInfoEight">Coffee and sandwiches.</string>
-    <string name="foodInfoNine">Casual dining serving barbecued meats.</string>
-    <string name="foodInfoTen">Specializing in pizza, sandwiches and wings.</string>
+    <string name="foodInfoEight">Casual dining serving barbecued meats.</string>
+    <string name="foodInfoNine">Specializing in pizza, sandwiches and wings.</string>
     <string name="hotelsInfoOne">A two star hotel, with free breakfast and wifi.</string>
     <string name="hotelsInfoTwo">A three star hotel, with free breakfast and wifi.</string>
     <string name="hotelsInfoThree">A two star hotel, with free breakfast.</string>
@@ -112,18 +116,16 @@
     <string name="foodHoursTwo">Mon – Sat: 11am to 10pm\nSun: 12pm to 8pm
         \nClosed Fourth of July</string>
     <string name="foodHoursThree">Mon – Sat: 6am to 3pm\nSun: 8am to 2pm</string>
-    <string name="foodHoursFour">Mon: Closed\nTues – Thu: 3pm to 9pm\nFri: 11am to 10pm
-        \nSat: 3pm to 10pm\nSun: 1pm to 9pm</string>
+    <string name="foodHoursFour">Mon – Thu: 7am to 7pm\nFri: 7am to 8pm\nSat: 8am to 8pm
+        \nSun: 10am to 4pm</string>
     <string name="foodHoursFive">Mon – Thu: 11am to 2pm / 4pm to 9pm\nFri: 11am to 2pm /
         4pm to 10 pm\nSat: 4pm to 10pm\nSun: Closed</string>
     <string name="foodHoursSix"><![CDATA[Mon – Thu: 11am to 12am\nFri & Sat: 11am to 1am
         \nSun: 12pm to 9pm]]></string>
     <string name="foodHoursSeven"><![CDATA[Mon – Thu: 10am to 9:30pm\nFri & Sat: 10am to 10pm
         \nSun: 10:30am to 9:30pm]]></string>
-    <string name="foodHoursEight">Mon – Thu: 7am to 7pm\nFri: 7am to 8pm\nSat: 8am to 8pm
-        \nSun: 10am to 4pm</string>
-    <string name="foodHoursNine"><![CDATA[Tue – Sat: 11am to 9pm\nSun & Mon: 11am to 8pm]]></string>
-    <string name="foodHoursTen"><![CDATA[Mon – Thu: 11am to 9pm\nFri & Sat: 11am to 11pm
+    <string name="foodHoursEight"><![CDATA[Tue – Sat: 11am to 9pm\nSun & Mon: 11am to 8pm]]></string>
+    <string name="foodHoursNine"><![CDATA[Mon – Thu: 11am to 9pm\nFri & Sat: 11am to 11pm
         \nSun: 12pm to 9pm]]></string>
     <string name="hotelsHoursOne">Check In: 3pm\nCheck Out: 11am</string>
     <string name="hotelsHoursTwo">Check In: 3pm\nCheck Out: 11am</string>
@@ -147,13 +149,12 @@
     <string name="foodLocationOne">19 E Main St, Tipp City, OH 45371</string>
     <string name="foodLocationTwo">106 E Main St, Tipp City, OH 45371</string>
     <string name="foodLocationThree">120 E Main St, Tipp City, OH 45371</string>
-    <string name="foodLocationFour">18 S 2nd St, Tipp City, OH 45371</string>
+    <string name="foodLocationFour">115 E Main St, Tipp City, OH 45371</string>
     <string name="foodLocationFive">965 W Main St, Tipp City, OH 45371</string>
     <string name="foodLocationSix">902 W Main St, Tipp City, OH 45371</string>
     <string name="foodLocationSeven">14 S Tippecanoe Drive, Tipp City, OH 45371</string>
-    <string name="foodLocationEight">115 E Main St, Tipp City, OH 45371</string>
-    <string name="foodLocationNine">135 S Garber Drive, Tipp City, OH 45371</string>
-    <string name="foodLocationTen">7025 S Co Rd 25A, Tipp City, OH 45371</string>
+    <string name="foodLocationEight">135 S Garber Drive, Tipp City, OH 45371</string>
+    <string name="foodLocationNine">7025 S Co Rd 25A, Tipp City, OH 45371</string>
     <string name="hotelsLocationOne">1100 W Main St, Tipp City, OH 45371</string>
     <string name="hotelsLocationTwo">19 Weller Drive, Tipp City OH 45371</string>
     <string name="hotelsLocationThree">550 E National Rd, Vandalia, OH 45377</string>
@@ -176,13 +177,12 @@
     <string name="foodPhoneOne">(937) 667–0007</string>
     <string name="foodPhoneTwo">(937) 667–5200</string>
     <string name="foodPhoneThree">(937) 667–0113</string>
-    <string name="foodPhoneFour">(937) 667–2297</string>
+    <string name="foodPhoneFour">(937) 506–7733</string>
     <string name="foodPhoneFive">(937) 667–6664</string>
     <string name="foodPhoneSix">(937) 667–4433</string>
     <string name="foodPhoneSeven">(937) 667–7607</string>
-    <string name="foodPhoneEight">(937) 506–7733</string>
-    <string name="foodPhoneNine">(937) 669–2271</string>
-    <string name="foodPhoneTen">(937) 667–3732</string>
+    <string name="foodPhoneEight">(937) 669–2271</string>
+    <string name="foodPhoneNine">(937) 667–3732</string>
     <string name="hotelsPhoneOne">(937) 667–5161</string>
     <string name="hotelsPhoneTwo">(937) 667–1574</string>
     <string name="hotelsPhoneThree">(937) 898–7636</string>
@@ -207,20 +207,17 @@
     <string name="foodWebsiteOne">http://www.coldwater-cafe.com</string>
     <string name="foodWebsiteTwo">https://www.harrisonsrestaurant.com</string>
     <string name="foodWebsiteThree">http://www.samandethels.com</string>
-    <string name="foodWebsiteFour">https://www.zmenu.com/
-        d-js-pizza-alley-tipp-city-online-menu/</string>
+    <string name="foodWebsiteFour">https://www.facebook.com/gfpcoffeehouse</string>
     <string name="foodWebsiteFive">http://www.greenfirebistro.com</string>
     <string name="foodWebsiteSix">https://www.hinderssportsbar.com</string>
     <string name="foodWebsiteSeven">http://www.hongkongmenu.weebly.com</string>
-    <string name="foodWebsiteEight">https://www.facebook.com/gfpcoffeehouse</string>
-    <string name="foodWebsiteNine">https://www.hickoryriver.com/locations/
-        tipp-city-ohio.html</string>
-    <string name="foodWebsiteTen">https://www.facebook.com/JJs-Lunch-Box-402683449898152</string>
-    <string name="hotelsWebsiteOne">https://www.ihg.com/holidayinnexpress/hotels/us/en/tipp-city/
-        daytc/hoteldetail</string>
+    <string name="foodWebsiteEight">https://www.hickoryriver.com/locations/tipp-city-ohio.html</string>
+    <string name="foodWebsiteNine">https://www.facebook.com/JJs-Lunch-Box-402683449898152</string>
+    <string name="hotelsWebsiteOne">https://www.ihg.com/holidayinnexpress/hotels/us/en/tipp-city
+        /daytc/hoteldetail</string>
     <string name="hotelsWebsiteTwo">http://www.laquintadaytontippcity.com</string>
-    <string name="hotelsWebsiteThree">https://www.wyndhamhotels.com/super-8/vandalia-ohio/
-        super-8-vandalia-dayton-international-airport/overview</string>
+    <string name="hotelsWebsiteThree">https://www.wyndhamhotels.com/super-8/vandalia-ohio
+        /super-8-vandalia-dayton-international-airport/overview</string>
     <string name="hotelsWebsiteFour">http://budgetinntroy.business.site</string>
     <string name="hotelsWebsiteFive">https://www.motel6.com/en/motels.oh.troy.4700.html</string>
 </resources>
