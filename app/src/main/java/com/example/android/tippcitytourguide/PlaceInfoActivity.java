@@ -1,15 +1,14 @@
 package com.example.android.tippcitytourguide;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.android.tippcitytourguide.databinding.ActivityPlaceInfoBinding;
 
 public class PlaceInfoActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,7 +19,9 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_place_info);
+        // Set up Data Binding and set the content.
+        ActivityPlaceInfoBinding binding = DataBindingUtil.setContentView(this,
+                R.layout.activity_place_info);
 
         // Retrieve info from intent.
         int image = getIntent().getIntExtra("image", -1);
@@ -30,10 +31,8 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         phone = getIntent().getStringExtra("phone");
         website = getIntent().getStringExtra("website");
 
-        Toolbar appToolbar1 = findViewById(R.id.appToolbar);
-
         // Set the toolbar.
-        setSupportActionBar(appToolbar1);
+        setSupportActionBar(binding.appToolbar);
 
         // Get a support ActionBar corresponding to this toolbar.
         ActionBar appToolbar = getSupportActionBar();
@@ -42,29 +41,26 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         assert appToolbar != null;
         appToolbar.setDisplayHomeAsUpEnabled(true);
 
+        // Set the title on the Toolbar.
         setTitle(name);
 
-        ImageView infoImage = findViewById(R.id.infoImage);
-        infoImage.setImageResource(image);
+        // Set the image.
+        binding.ivInfoImage.setImageResource(image);
 
-        TextView infoHours = findViewById(R.id.infoHours);
-        infoHours.setText(hours);
+        // Set the hours of operation text.
+        binding.tvInfoHours.setText(hours);
 
-        Button infoLocation = findViewById(R.id.infoLocation);
-        infoLocation.setOnClickListener(this);
-
-        Button infoCall = findViewById(R.id.infoCall);
-        infoCall.setOnClickListener(this);
-
-        Button infoWebsite = findViewById(R.id.infoWebsite);
-        infoWebsite.setOnClickListener(this);
+        // Set the button listeners.
+        binding.btnInfoLocation.setOnClickListener(this);
+        binding.btnInfoCall.setOnClickListener(this);
+        binding.btnInfoWebsite.setOnClickListener(this);
     }
 
     // Perform action on click.
     public void onClick(View v) {
         switch (v.getId()) {
             // Show map location of the place.
-            case R.id.infoLocation:
+            case R.id.btnInfoLocation:
                 Intent placeLocation = new Intent(Intent.ACTION_VIEW);
                 placeLocation.setData(Uri.parse("geo:0,0?q=" + location));
                 // Make sure an app is installed to complete this action.
@@ -74,7 +70,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
                 break;
 
             // Enter the phone number in the dialer for the place.
-            case R.id.infoCall:
+            case R.id.btnInfoCall:
                 Intent placePhone = new Intent(Intent.ACTION_DIAL);
                 placePhone.setData(Uri.parse("tel:" + phone));
                 // Make sure an app is installed to complete this action.
@@ -84,7 +80,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
                 break;
 
             // Go to the website for the place.
-            case R.id.infoWebsite:
+            case R.id.btnInfoWebsite:
                 Intent placeWebsite = new Intent(Intent.ACTION_VIEW);
                 placeWebsite.setData(Uri.parse(website));
                 // Make sure an app is installed to complete this action.

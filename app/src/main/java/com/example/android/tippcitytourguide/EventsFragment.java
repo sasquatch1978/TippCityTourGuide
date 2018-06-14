@@ -1,6 +1,7 @@
 package com.example.android.tippcitytourguide;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -10,7 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ListView;
+
+import com.example.android.tippcitytourguide.databinding.PlaceListBinding;
 
 import java.util.ArrayList;
 
@@ -26,10 +28,12 @@ public class EventsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.place_list, container, false);
+        // Set up Data Binding and inflate the fragment.
+        PlaceListBinding binding = DataBindingUtil.inflate(inflater, R.layout.place_list,
+                container, false);
 
-        // Identify the views.
-        ListView listView = rootView.findViewById(R.id.list);
+        // Set the view.
+        View rootView = binding.getRoot();
 
         // Create an ArrayList of places for Events.
         final ArrayList<Place> places = new ArrayList<>();
@@ -68,13 +72,13 @@ public class EventsFragment extends Fragment {
 
         // Set the adapter.
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), places);
-        listView.setAdapter(adapter);
+        binding.lvPlaceList.setAdapter(adapter);
 
         // Remove divider by setting height to zero.
-        listView.setDividerHeight(0);
+        binding.lvPlaceList.setDividerHeight(0);
 
         // Set a listener for the list that starts a new activity for the item that is clicked.
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        binding.lvPlaceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // Get the position of the clicked list item.

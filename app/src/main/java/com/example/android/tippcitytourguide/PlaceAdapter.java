@@ -1,14 +1,15 @@
 package com.example.android.tippcitytourguide;
 
 import android.app.Activity;
+import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.android.tippcitytourguide.databinding.ListItemBinding;
 
 import java.util.ArrayList;
 
@@ -28,43 +29,38 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view.
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        // Check if the existing view is being reused, otherwise inflate the view, set Data Binding.
+        ListItemBinding binding;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
+            binding = DataBindingUtil.bind(convertView);
+            convertView.setTag(binding);
+        } else {
+            binding = (ListItemBinding) convertView.getTag();
         }
 
         // Get the {@link Place} object located at this position in the list.
         Place currentPlace = getItem(position);
+
+        // Make sure binding and currentPlace aren't null.
+        assert binding != null;
         assert currentPlace != null;
 
-        // Check if there is an image.
-        ImageView listViewLeftImage = listItemView.findViewById(R.id.listLeftImage);
-        if (currentPlace.hasImage()) {
-            // If an image is available, display the provided image based on the resource ID.
-            listViewLeftImage.setImageResource(currentPlace.getPlaceImageId());
-            // Make sure the view is visible.
-            listViewLeftImage.setVisibility(View.VISIBLE);
-        } else {
-            // Hide the ImageView if there isn't an image.
-            listViewLeftImage.setVisibility(View.GONE);
-        }
+        // Get image that represents the place and set it on the ImageView.
+        binding.ivListLeftImage.setImageResource(currentPlace.getPlaceImageId());
 
         // Get the name of the place and set this text on the TextView.
-        TextView placeName = listItemView.findViewById(R.id.placeName);
-        placeName.setText(currentPlace.getPlaceNameId());
+        binding.tvPlaceName.setText(currentPlace.getPlaceNameId());
 
         // Get the brief information about the place and set this text on the TextView.
-        TextView placeInfo = listItemView.findViewById(R.id.placeInfo);
-        placeInfo.setText(currentPlace.getPlaceInfoId());
+        binding.tvPlaceInfo.setText(currentPlace.getPlaceInfoId());
 
         // Get the price of admission to the place and set this text on the TextView.
-        TextView placePrice = listItemView.findViewById(R.id.placePrice);
-        placePrice.setText(currentPlace.getPlacePriceId());
+        binding.tvPlacePrice.setText(currentPlace.getPlacePriceId());
 
         // Return the whole list item layout (containing an ImageView and three TextViews)
         // so that it can be shown in the ListView.
-        return listItemView;
+        return binding.getRoot();
     }
 }

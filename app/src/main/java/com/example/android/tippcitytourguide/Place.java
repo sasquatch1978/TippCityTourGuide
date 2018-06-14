@@ -10,9 +10,6 @@ public class Place {
     private String placePhoneId;
     private String placeWebsiteId;
 
-    // Constant value that represents no image was provided for this place.
-    private static final int NO_IMAGE_PROVIDED = -1;
-
     /**
      * Create a new Place object.
      *
@@ -35,11 +32,6 @@ public class Place {
         placeLocationId = placeLocation;
         placePhoneId = placePhone;
         placeWebsiteId = placeWebsite;
-    }
-
-    // Returns whether or not there is an image for this place.
-    public boolean hasImage() {
-        return placeImageId != NO_IMAGE_PROVIDED;
     }
 
     // Get the image that represents the place.

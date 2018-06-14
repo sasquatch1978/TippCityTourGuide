@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/PlaceInfoLayout"
     tools:context=".PlaceInfoActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/appToolbar"
-        style="@style/ToolbarNoElevation" />
+    <LinearLayout style="@style/PlaceInfoLayout">
 
-    <ImageView
-        android:id="@+id/infoImage"
-        style="@style/InfoLayoutImage"
-        android:importantForAccessibility="no" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appToolbar"
+            style="@style/ToolbarNoElevation" />
 
-    <RelativeLayout style="@style/InformationLayout">
+        <ImageView
+            android:id="@+id/ivInfoImage"
+            style="@style/InfoLayoutImage"
+            android:importantForAccessibility="no" />
 
-        <TextView
-            style="@style/HoursInformationHeader"
-            android:text="@string/infoHoursHeader" />
+        <RelativeLayout style="@style/InformationLayout">
 
-        <TextView
-            android:id="@+id/infoHours"
-            style="@style/HoursInformation"
-            tools:text="Hours" />
+            <TextView
+                style="@style/HoursInformationHeader"
+                android:text="@string/infoHoursHeader" />
 
-        <Button
-            android:id="@+id/infoLocation"
-            style="@style/LocationButton"
-            android:text="@string/locationButtonText" />
+            <TextView
+                android:id="@+id/tvInfoHours"
+                style="@style/HoursInformation"
+                tools:text="Hours" />
 
-        <Button
-            android:id="@+id/infoCall"
-            style="@style/CallButton"
-            android:text="@string/callButtonText" />
+            <Button
+                android:id="@+id/btnInfoLocation"
+                style="@style/LocationButton"
+                android:text="@string/locationButtonText" />
 
-        <Button
-            android:id="@+id/infoWebsite"
-            style="@style/WebsiteButton"
-            android:text="@string/websiteButtonText" />
+            <Button
+                android:id="@+id/btnInfoCall"
+                style="@style/CallButton"
+                android:text="@string/callButtonText" />
 
-    </RelativeLayout>
-</LinearLayout>
+            <Button
+                android:id="@+id/btnInfoWebsite"
+                style="@style/WebsiteButton"
+                android:text="@string/websiteButtonText" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
